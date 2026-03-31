@@ -1,0 +1,14 @@
+directories:
+  output: release/
+  buildResources: build
+appId: com.dmgrimoire.app
+productName: DM Grimoire
+win:
+  target:
+    - nsis
+    - zip
+files:
+  - filter:
+      - dist/public/**/*
+      - dist-electron/**/*
+electronVersion: 41.1.0
